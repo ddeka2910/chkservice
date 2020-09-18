@@ -1,6 +1,7 @@
 sudo: true
 # After a few years
-dist: xenial
+#dist: xenial
+arch: ppc64
 language: c++
 env:
   - DEBUG=1
