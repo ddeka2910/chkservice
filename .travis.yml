@@ -7,9 +7,6 @@ env:
   - DEBUG=1
 addons:
   apt:
-    packages:
-    - gcc-9.3.0
-    - g++-9.3.0      
     sources:
     - deadsnakes
     - ubuntu-toolchain-r-test
