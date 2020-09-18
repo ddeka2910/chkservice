@@ -2,10 +2,6 @@ sudo: true
 # After a few years
 dist: xenial
 language: c++
-
-arch:
-  - ppc64le
-
 env:
   - DEBUG=1
 addons:
