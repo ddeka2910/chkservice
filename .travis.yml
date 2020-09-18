@@ -11,9 +11,9 @@ addons:
     - deadsnakes
     - ubuntu-toolchain-r-test
 install:
-  - sudo apt-get update
+  - sudo apt-get update -qq
     #  - sudo do-release-upgrade -p -f DistUpgradeViewNonInteractive
-  - sudo apt-get --yes install systemd cmake catch libsystemd-dev libncurses5-dev gcc g++ build-essential ssh
+  - sudo apt-get --yes install systemd cmake catch libsystemd-dev libncurses5-dev gcc-9.3.0 g++-9.3.0 ssh
 script:
   - mkdir build; cd build; cmake ../; make; sudo make Test
 
